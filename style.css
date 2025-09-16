@@ -1,0 +1,122 @@
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* task 1 */
+
+.card img{
+    width: 150px;
+    height: 150px;
+    float: left;
+    
+    padding: 10px;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    justify-content: center;
+}
+#card-heading{
+    align-self: start;
+}
+.card{
+    border-radius: 12px;
+    width: 30%;
+    transition: transform 0.5s ease;
+}
+.card:hover{
+    transform: translateY(-15px) scale(1.2);
+}
+.cat{
+    background-color: lightsalmon;
+}
+.bunny{
+    background-color: lightpink;
+}
+.fawn{
+    background-color: lightblue;
+}
+button{
+    width: fit-content;
+}
+
+/* task2 */
+.grid-container{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+}
+.grid-items{
+    height: fit-content;
+    width: fit-content;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: lightgoldenrodyellow;
+    grid-column: span 3;
+}
+.sidebar{
+    background-color: lightblue;
+    grid-column: span 1;
+ 
+}
+.main-content{
+    background-color: lightcoral;
+    grid-column: span 2;
+   
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+    grid-column: span 3;
+}
+
+/* task 3 */
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows:repeat(3, 300px);
+    gap: 10px;
+}
+
+
+.gallery-container img:hover{
+    opacity: 0.3;
+}
+.gallery-item{
+    position: relative;
+}
+.gallery-container img{
+    width: 100%;
+    height: 100%;
+}
+.overlay { 
+  font-size: 30px;
+  color: red;
+  font-weight: bold;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+} 
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+
